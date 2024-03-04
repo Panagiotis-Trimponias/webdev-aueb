@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>REGISTER FORM</title>
+</head>
+
+<body>
+    
+    <center>
+        
+        <h1>ΕΓΓΡΑΦΗ ΕΚΠΑΙΔΕΥΟΜΕΝΟΥ</h1>
+
+        <form>
+            
+            <table>
+                <tr>
+                    <td><label for="firstname">ΟΝΟΜΑ</label></td>
+                    <td><input type="text" id="firstname" required maxlength="20" pattern="[a-zA-ZΑ-Ω]+"></td>
+                </tr>
+                <tr>
+                    <td><label for="lastname">ΕΠΩΝΥΜΟ</label></td>
+                    <td><input type="text" id="lastname" required maxlength="20" pattern="[a-zA-ZΑ-Ω]+"></td>
+                </tr>
+                <tr>
+                    <td><label for="bday">ΗΜΕΡΟΜΗΝΙΑ ΓΕΝΝΗΣΗΣ</label></td>
+                    <td><input type="date" id="bday" maxlength="8" max="2005-12-31"></td>
+                </tr>
+                <tr>
+                    <td><label for="yearOfstudies">ΕΤΟΣ ΣΠΟΥΔΩΝ</label></td>
+                    <td><input type="number" id="yearOfstudies" required min="1" max="6"></td>
+                </tr>
+                <tr>
+                    <td><label for="login">LOGIN (e-mail)</label></td>
+                    <td><input type="email" id="login" required></td>
+                </tr>
+                <tr>
+                    <td><label for="password">PASSWORD</label></td>
+                    <td><input type="password" id="password" required minlength="8"></td>
+                </tr>
+                <tr>
+                    <td><button type="submit">SUBMIT</button></td>
+                    <td></td>
+                </tr>
+            </table>
+
+        </form>
+
+    </center>
+
+
+</body>
+
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>STUDENTS FORM</title>
+
+</head>
+
+<body>
+    
+    <h1>ΣΤΟΙΧΕΙΑ ΕΚΠΑΙΔΕΥΟΜΕΝΟΥ</h1>
+    
+    <form>
+        <table>
+            <tr>
+                <td><label for="firstname">ΟΝΟΜΑ</label></td>
+                <td><input type="text" id="firstname"></td>
+            </tr>
+            <tr>
+                <td> <label for="lastname">ΕΠΩΝΥΜΟ</label></td>
+                <td><input type="text" id="lastname"></td>
+            </tr>
+            <tr>
+                <td><label>ΦΥΛΟ</label></td>
+                <td>
+                    <input type="radio" id="male" name="gender">
+                    <label for="male">ΑΝΔΡΑΣ</label>
+
+                    <input type="radio" id="female" name="gender">
+                    <label for="female">ΓΥΝΑΙΚΑ</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="levelofstudies">ΕΠΙΠΕΔΟ ΣΠΟΥΔΩΝ</label>
+                </td>
+                <td>
+                    <select id="levelofstudies">
+                        <option value="BSc">BSc</option>
+                        <option value="MSc">MSc</option>
+                        <option value="PHD">PHD</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="comments">ΣΧΟΛΙΑ</label></td>
+                <td><textarea id="comments" cols="30" rows="10"></textarea></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><button type="submit">ΥΠΟΒΟΛΗ</button></td>
+            </tr>
+        </table>
+    </form>
+ 
+    <br>
+
+    <hr>
+
+    <button type="button" onclick="console.log('Hello World!')">CHECK SUBMISSION</button>
+
+</body>
+
+</html>
